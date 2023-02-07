@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
@@ -6,6 +6,10 @@ import OtherPage from './OtherPage';
 import Fib from './Fib';
 
 function App() {
+  useEffect(() => {
+    console.log('version 5');
+  }, []);
+
   return (
     <Router>
       <div className="App">
