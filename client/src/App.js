@@ -6,10 +6,6 @@ import OtherPage from './OtherPage';
 import Fib from './Fib';
 
 function App() {
-  useEffect(() => {
-    console.log('version 5');
-  }, []);
-
   return (
     <Router>
       <div className="App">
